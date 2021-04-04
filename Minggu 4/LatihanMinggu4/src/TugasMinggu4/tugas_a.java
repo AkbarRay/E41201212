@@ -16,15 +16,28 @@ public class tugas_a {
             angka[i] = s.nextInt();
         }
 
-        Arrays.sort(angka);
+        System.out.print("Array semua\t\t\t: ");
+        System.out.print("[ ");
+        for (int i : angka) {
+            System.out.print(i + " ");
+        }
+        System.out.println("]");
 
+        System.out.print("Array Genap\t\t\t: ");
+        System.out.print("[ ");
+        for (int i : angka) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("]");
+
+        Arrays.sort(angka);
+        System.out.print("Array Urut [kecil - besar]\t: ");
         System.out.print("[ ");
         for (int i : angka) {
             System.out.print(i + " ");
         }
         System.out.print("]");
-
-
     }
-
 }

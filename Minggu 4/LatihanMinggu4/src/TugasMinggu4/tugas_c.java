@@ -26,9 +26,17 @@ public class tugas_c {
             }
         }
 
+        int avg = 0;
+        int sum = 0;
+        for (int i : angka) {
+           sum += i;
+        }
+
+        avg = sum / angka.length;
+
         System.out.println("nilai minimum : " + min);
         System.out.println("nilai maximum : " + max);
+        System.out.println("nilai rata - rata : " + avg);
     }
-
 
 }
